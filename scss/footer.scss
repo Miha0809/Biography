@@ -1,0 +1,163 @@
+$font-weight: (
+        "normal": 500,
+        "middle": 600,
+        "bold": 1000
+);
+$black: #262624;
+$brown: #ad9961;
+$gray: #4a4a4a;
+$white: #fff;
+$darkBrown: #494947;
+$lightBrown: #bebeb6;
+$lightBlue: #edf1f4;
+$width: 70%;
+
+@mixin hr($color) {
+  border-top: 1px solid $color;
+  width: 150px;
+  margin: 50px auto;
+}
+
+/******************** Start footer ********************/
+footer {
+  width: 100%;
+  background-image: url(../img/Oslo.jpg);
+  background-size: cover;
+
+  .background {
+    background-color: rgba($black, 0.5);
+    height: 1024px;
+
+    #my_contacts {
+      margin: 100px auto;
+      width: $width;
+
+      .name {
+        text-align: center;
+        padding-top: 80px;
+        color: $white;
+
+        .section-name {
+          text-transform: capitalize;
+        }
+
+        .hr {
+          @include hr($white);
+        }
+      }
+
+      #form {
+        border: 3px solid $lightBrown;
+        border-radius: 10px;
+        width: 70%;
+        margin: 0px auto;
+
+        form {
+          display: grid;
+          height: 700px;
+          grid-template-columns: repeat(2, 50%);
+          grid-template-rows: repeat(7, 100px);
+          grid-template-areas: "name email"
+                               "subject subject"
+                               "message message"
+                               "message message"
+                               "message message"
+                               "message message"
+                               "button button";
+          justify-content: center;
+
+          input {
+            margin: 20px;
+            border-radius: 10px;
+            border: 1px solid $lightBrown;
+            padding: 20px;
+            background-color: rgba(white, 0.5);
+            font-size: 20px;
+          }
+
+          button {
+            grid-area: button;
+            margin: 20px auto;
+            width: 200px;
+            border: 0px solid;
+            background-color: rgba(white, 0.5);
+            color: $black;
+            border-radius: 10px;
+            font-size: 20px;
+          }
+
+          input::placeholder {
+            color: $black;
+          }
+
+          #name-input {
+            grid-area: name;
+          }
+
+          #email-input {
+            grid-area: email;
+          }
+
+          #subject-input {
+            grid-area: subject;
+          }
+
+          #message-input {
+            grid-area: message;
+            margin: 20px;
+            border: 0 solid;
+            border-radius: 10px;
+            font-size: 20px;
+            background-color: rgba(white, 0.5);
+            padding: 20px;
+          }
+        }
+      }
+    }
+  }
+
+  #bottom {
+    width: 100%;
+    background-color: $darkBrown;
+
+    #footer-content {
+      width: 70%;
+      display: flex;
+      justify-content: right;
+
+      ul {
+        display: flex;
+        float: left;
+        margin-top: 5px;
+
+        li {
+          width: 40px;
+          height: 40px;
+          border: 1px solid white;
+          margin: 10px;
+
+        }
+
+        li:not(:hover) {
+          background-color: $darkBrown;
+          transition: 0.3s;
+        }
+
+        li:hover {
+          background-color: $lightBrown;
+          transition: 0.3s;
+        }
+
+        img {
+          width: 30px;
+          height: 30px;
+          position: relative;
+          left: 5px;
+          top: 5px;
+        }
+      }
+    }
+  }
+}
+
+/******************** End footer ********************/

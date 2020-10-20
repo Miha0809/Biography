@@ -1,0 +1,97 @@
+/******************** Start footer ********************/
+footer {
+  width: 100%;
+  background-image: url(../img/Oslo.jpg);
+  background-size: cover; }
+  footer .background {
+    background-color: rgba(38, 38, 36, 0.5);
+    height: 1024px; }
+    footer .background #my_contacts {
+      margin: 100px auto;
+      width: 70%; }
+      footer .background #my_contacts .name {
+        text-align: center;
+        padding-top: 80px;
+        color: #fff; }
+        footer .background #my_contacts .name .section-name {
+          text-transform: capitalize; }
+        footer .background #my_contacts .name .hr {
+          border-top: 1px solid #fff;
+          width: 150px;
+          margin: 50px auto; }
+      footer .background #my_contacts #form {
+        border: 3px solid #bebeb6;
+        border-radius: 10px;
+        width: 70%;
+        margin: 0px auto; }
+        footer .background #my_contacts #form form {
+          display: grid;
+          height: 700px;
+          grid-template-columns: repeat(2, 50%);
+          grid-template-rows: repeat(7, 100px);
+          grid-template-areas: "name email" "subject subject" "message message" "message message" "message message" "message message" "button button";
+          justify-content: center; }
+          footer .background #my_contacts #form form input {
+            margin: 20px;
+            border-radius: 10px;
+            border: 1px solid #bebeb6;
+            padding: 20px;
+            background-color: rgba(255, 255, 255, 0.5);
+            font-size: 20px; }
+          footer .background #my_contacts #form form button {
+            grid-area: button;
+            margin: 20px auto;
+            width: 200px;
+            border: 0px solid;
+            background-color: rgba(255, 255, 255, 0.5);
+            color: #262624;
+            border-radius: 10px;
+            font-size: 20px; }
+          footer .background #my_contacts #form form input::placeholder {
+            color: #262624; }
+          footer .background #my_contacts #form form #name-input {
+            grid-area: name; }
+          footer .background #my_contacts #form form #email-input {
+            grid-area: email; }
+          footer .background #my_contacts #form form #subject-input {
+            grid-area: subject; }
+          footer .background #my_contacts #form form #message-input {
+            grid-area: message;
+            margin: 20px;
+            border: 0 solid;
+            border-radius: 10px;
+            font-size: 20px;
+            background-color: rgba(255, 255, 255, 0.5);
+            padding: 20px; }
+  footer #bottom {
+    width: 100%;
+    background-color: #494947; }
+    footer #bottom #footer-content {
+      width: 70%;
+      display: flex;
+      justify-content: right; }
+      footer #bottom #footer-content ul {
+        display: flex;
+        float: left;
+        margin-top: 5px; }
+        footer #bottom #footer-content ul li {
+          width: 40px;
+          height: 40px;
+          border: 1px solid white;
+          margin: 10px; }
+        footer #bottom #footer-content ul li:not(:hover) {
+          background-color: #494947;
+          transition: 0.3s; }
+        footer #bottom #footer-content ul li:hover {
+          background-color: #bebeb6;
+          transition: 0.3s; }
+        footer #bottom #footer-content ul img {
+          width: 30px;
+          height: 30px;
+          position: relative;
+          left: 5px;
+          top: 5px; }
+
+/******************** End footer ********************/
+
+/*# sourceMappingURL=footer.css.map */

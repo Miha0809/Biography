@@ -1,0 +1,114 @@
+.bold {
+  font-weight: 1000; }
+
+main {
+  width: 100%;
+  /******************** My skills ********************/ }
+  main #about-content {
+    width: 70%;
+    margin: 100px auto; }
+    main #about-content #about_me {
+      text-align: center; }
+      main #about-content #about_me .section-name {
+        text-transform: capitalize; }
+      main #about-content #about_me .hr {
+        border-top: 1px solid #262624;
+        width: 150px;
+        margin: 50px auto; }
+    main #about-content #content {
+      display: grid;
+      grid-template-columns: repeat(2, 70%);
+      grid-template-rows: repeat(4, 8em); }
+      main #about-content #content #left-about p {
+        display: flex;
+        width: 70%;
+        font-size: 15px;
+        line-height: 30px; }
+      main #about-content #content #left-about #my-data {
+        display: flex;
+        width: 100%; }
+        main #about-content #content #left-about #my-data ul {
+          line-height: 40px; }
+        main #about-content #content #left-about #my-data #left-section {
+          width: 20%;
+          height: 10px; }
+          main #about-content #content #left-about #my-data #left-section ul li {
+            font-weight: 1000; }
+        main #about-content #content #left-about #my-data #right-section {
+          height: 10px; }
+          main #about-content #content #left-about #my-data #right-section ul li::Before {
+            content: ":";
+            margin-right: 40px; }
+      main #about-content #content #right-about {
+        display: grid;
+        grid-template-columns: repeat(2, 50%);
+        grid-template-rows: repeat(1, 150px);
+        width: 50%; }
+        main #about-content #content #right-about .technology {
+          margin: 0 10px 10px 10px; }
+          main #about-content #content #right-about .technology .photo {
+            display: flex;
+            justify-content: center;
+            padding: 20px 0;
+            border: 1px solid #262624; }
+          main #about-content #content #right-about .technology .photo img {
+            width: 60px;
+            height: 60px; }
+          main #about-content #content #right-about .technology .name-technology {
+            text-align: center; }
+            main #about-content #content #right-about .technology .name-technology p {
+              text-transform: capitalize; }
+            main #about-content #content #right-about .technology .name-technology #caps {
+              text-transform: uppercase; }
+  main .background {
+    background-image: url(../img/writingMac.jpg); }
+    main .background #my_skills {
+      width: 100%;
+      height: 800px;
+      background-color: rgba(0, 0, 0, 0.7);
+      color: white; }
+      main .background #my_skills #content-skills {
+        width: 70%;
+        margin: 100px auto;
+        position: relative;
+        top: 100px; }
+        main .background #my_skills #content-skills .name {
+          text-align: center;
+          color: white; }
+          main .background #my_skills #content-skills .name .section-name {
+            text-transform: capitalize; }
+          main .background #my_skills #content-skills .name .hr {
+            border-top: 1px solid white;
+            width: 150px;
+            margin: 50px auto;
+            background-color: #fff; }
+      main .background #my_skills #skills {
+        width: 100%;
+        display: grid;
+        grid-template-columns: repeat(2, 4fr);
+        grid-template-rows: repeat(2, 150px); }
+        main .background #my_skills #skills .skill {
+          width: 96%;
+          margin: 50px 0; }
+          main .background #my_skills #skills .skill .name {
+            float: left;
+            font-weight: 1000;
+            text-transform: uppercase;
+            font-size: 20px; }
+          main .background #my_skills #skills .skill .line {
+            width: 100%;
+            background-color: #fff;
+            display: flex; }
+            main .background #my_skills #skills .skill .line .procent {
+              width: 48%;
+              color: #494947;
+              position: absolute;
+              padding-top: 5px;
+              text-align: center; }
+            main .background #my_skills #skills .skill .line .level {
+              height: 30px;
+              background-color: #ad9961; }
+
+/******************** End main ********************/
+
+/*# sourceMappingURL=main.css.map */

@@ -1,0 +1,324 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport"
+        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+  <title>Biography</title>
+
+  <!-- CSS -->
+  <link rel="stylesheet" type="text/css" href="css/header.css">
+  <link rel="stylesheet" type="text/css" href="css/main.css">
+  <link rel="stylesheet" type="text/css" href="css/footer.css">
+  <!-- End CSS -->
+
+  <!-- Bootstrap -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css"
+        integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+  <!-- End Bootstrap -->
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      scroll-behavior: smooth;
+    }
+
+    li {
+      list-style-type: none;
+    }
+
+    #wrapepr {
+      max-width: 100%;
+      width: 100%;
+      height: 100px;
+      margin: 0 auto;
+    }
+  </style>
+</head>
+<body>
+<div id="wrapepr">
+  <!-- Start header -->
+  <div id="background">
+    <header>
+
+      <div id="nav-link">
+        <div id="left">
+          <div id="name-project">
+            <ul>
+              <li><a href="#"><h1><span class="bold" id="bio">Bio</span> card</h1></a></li>
+            </ul>
+          </div>
+          <div id="about-me">
+            <h1>
+              Привіт! <br/>
+              Я Full Stack Програміст <br/>
+              <br/>
+              <span class="bold">
+              Мене звати<br/>
+              <span id="name">Гулій Михайло</span>
+            </span>
+            </h1>
+            <br/>
+            <div id="buttons">
+              <button id="contact-me">Contact me</button>
+              <button id="download-CV"><a href="Resume/Resume.pdf" download="Resume/Resume.pdf">Download my C.V</a>
+              </button>
+            </div>
+          </div>
+        </div>
+        <div id="right">
+          <div id="navigator" class="default">
+            <ul>
+              <li><a href="#">Додому</a></li>
+              <li><a href=#about_me>Про мене</a></li>
+              <li><a href="#my_skills">Мої навички</a></li>
+              <li><a href="">Моє портфоліо</a></li>
+              <li><a href="#my_contacts">Зв'язок зі мною</a></li>
+            </ul>
+          </div>
+          <div id="photo">
+            <img src="img/MyPhoto.jpg" alt="My photo">
+          </div>
+        </div>
+      </div>
+    </header>
+  </div>
+  <!-- End header -->
+
+  <!--  Start main  -->
+  <main>
+    <!-- Start about me -->
+    <div id="about-content">
+      <div id="about_me">
+        <div class="section-name">
+          <h2>Про мене</h2>
+        </div>
+        <div class="hr"></div>
+      </div>
+
+      <div id="content">
+        <div id="left-about">
+          <p>
+            Я віддаю перевагу здоровому способу життя, як подорожі, їзда на велосипеді, пробіжка, важка атлетика,
+            настільний теніс, бокс тощо. <br/>
+            У вільний час я вчу технології, які зв’язані з моєю професією. <br/>
+            Я вільний від шкідливих звичок. <br/>
+            Я маю маленький досвід викладання інших людей навичкам програмування. <br/>
+            У мене є домашня тварина - це песик-хлопчик на ім'я "Кузя". <br/>
+          </p>
+          <div id="my-data">
+            <section id="left-section">
+              <ul>
+                <li>Ім'я</li>
+                <li>Років</li>
+                <li>Адреса</li>
+                <li>Мобільний телефон</li>
+                <li>Email</li>
+              </ul>
+            </section>
+            <section id="right-section">
+              <ul>
+                <li>Гулій Михайло</li>
+                <li>16</li>
+                <li>Івано-Франківськ / Надвірна</li>
+                <li>+380963235503</li>
+                <li>miha080104@gmail.com</li>
+              </ul>
+            </section>
+          </div>
+        </div>
+
+        <div id="right-about">
+
+          <div class="technology">
+            <div class="photo">
+              <img src="img/tag.png" alt="Tag photo">
+            </div>
+            <div class="name-technology">
+              <p>C# code</p>
+            </div>
+          </div>
+
+          <div class="technology">
+            <div class="photo">
+              <img src="img/monitor.png" alt="Tag photo">
+            </div>
+            <div class="name-technology">
+              <p>Windows forms</p>
+            </div>
+          </div>
+
+          <div class="technology">
+            <div class="photo">
+              <img src="img/aspnet.png" alt="Tag photo">
+            </div>
+            <div class="name-technology">
+              <p><span id="caps">asp.net</span></p>
+            </div>
+          </div>
+
+          <div class="technology">
+            <div class="photo">
+              <img src="img/monitor.png" alt="Tag photo">
+            </div>
+            <div class="name-technology">
+              <p>Front end</p>
+            </div>
+          </div>
+
+          <div class="technology">
+            <div class="photo">
+              <img src="img/react.png" alt="Tag photo">
+            </div>
+            <div class="name-technology">
+              <p>React.js</p>
+            </div>
+          </div>
+
+          <div class="technology">
+            <div class="photo">
+              <img src="img/sass.png" alt="Tag photo">
+            </div>
+            <div class="name-technology">
+              <p>Sass</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- End about me -->
+
+    <!-- Start my skills -->
+    <div class="background">
+      <div id="my_skills">
+        <div id="content-skills">
+          <div class="name">
+            <div class="section-name">
+              <h2>Мої навички</h2>
+            </div>
+            <div class="hr"></div>
+          </div>
+          <!-- Start Skills -->
+          <div id="skills">
+
+            <div class="skill">
+              <div class="name">
+                <p>C#</p>
+              </div>
+              <div class="line">
+                <p class="procent">50%</p>
+                <div class="level" style="width: 50%;"></div>
+              </div>
+            </div>
+
+            <div class="skill">
+              <div class="name">
+                <p>HTML</p>
+              </div>
+              <div class="line">
+                <p class="procent">75%</p>
+                <div class="level" style="width: 75%;"></div>
+              </div>
+            </div>
+
+            <div class="skill">
+              <div class="name">
+                <p>Windows Forms</p>
+              </div>
+              <div class="line">
+                <p class="procent">40%</p>
+                <div class="level" style="width: 40%;"></div>
+              </div>
+            </div>
+
+            <div class="skill">
+              <div class="name">
+                <p>CSS</p>
+              </div>
+              <div class="line">
+                <p class="procent">70%</p>
+                <div class="level" style="width: 70%;"></div>
+              </div>
+            </div>
+
+            <div class="skill">
+              <div class="name">
+                <p>ASP.NET</p>
+              </div>
+              <div class="line">
+                <p class="procent">20%</p>
+                <div class="level" style="width: 20%;"></div>
+              </div>
+            </div>
+
+            <div class="skill">
+              <div class="name">
+                <p>JavaScript</p>
+              </div>
+              <div class="line">
+                <p class="procent">30%</p>
+                <div class="level" style="width: 30%;"></div>
+              </div>
+            </div>
+
+          </div>
+          <!-- End skills -->
+        </div>
+      </div>
+    </div>
+    <!-- End my skills -->
+  </main>
+  <!--  End main  -->
+
+  <!-- Start footer -->
+  <footer>
+    <div class="background">
+      <div id="my_contacts">
+        <div class="name">
+          <div class="section-name">
+            <h2>Зв'язок зі мною</h2>
+          </div>
+          <div class="hr"></div>
+        </div>
+
+        <div id="form">
+          <form action="" method="POST">
+            <input id="name-input" type="text" placeholder="Your name">
+            <input id="email-input" type="email" placeholder="Your Email">
+            <input id="subject-input" type="text" placeholder="Subject">
+<!--            <input id="message-input" type="text" placeholder="Your Message">-->
+            <Textarea id="message-input" placeholder="Your Message"></Textarea>
+            <button type="submit">Submit</button>
+          </form>
+        </div>
+      </div>
+    </div>
+    <div id="bottom">
+      <div id="footer-content">
+        <ul>
+          <li id="gmail"><a href="mailto:miha080104@gmail.com"><img src="img/gmail.png" alt="Gmail"></a></li>
+          <li id="github"><a href="https://github.com/Miha0809"><img src="img/github.png" alt="Github"></a></li>
+          <li id="linkedin"><a href="https://www.linkedin.com/in/guliy-mikhail-280a981a5/"><img src="img/linkedin.png" alt="Libkedin"></a></li>
+        </ul>
+      </div>
+    </div>
+  </footer>
+  <!-- End footer -->
+</div>
+</div>
+
+<!-- Botstrap JS -->
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx"
+        crossorigin="anonymous"></script>
+<!-- End Bootstrap -->
+
+<script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+<script src="js/ScrollMenu.js"></script>
+</body>
+</html>

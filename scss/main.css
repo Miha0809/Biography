@@ -1,0 +1,79 @@
+.bold {
+  font-weight: 1000; }
+
+main {
+  width: 100%;
+  /******************** My skills ********************/ }
+  main #about-content {
+    width: 70%;
+    margin: 100px auto; }
+    main #about-content #about_me {
+      text-align: center; }
+      main #about-content #about_me .section-name {
+        text-transform: capitalize; }
+      main #about-content #about_me .hr {
+        border-top: 1px solid #262624;
+        width: 150px;
+        margin: 50px auto; }
+    main #about-content #content {
+      display: flex;
+      width: 100%; }
+      main #about-content #content #left-about {
+        width: 50%;
+        height: 0px; }
+        main #about-content #content #left-about p {
+          font-size: 15px;
+          line-height: 30px; }
+        main #about-content #content #left-about #my-data {
+          display: flex;
+          width: 100%; }
+          main #about-content #content #left-about #my-data ul {
+            line-height: 40px; }
+          main #about-content #content #left-about #my-data #left-section {
+            width: 35%;
+            height: 10px; }
+            main #about-content #content #left-about #my-data #left-section ul li {
+              font-weight: 1000; }
+          main #about-content #content #left-about #my-data #right-section {
+            width: 75%;
+            height: 10px; }
+            main #about-content #content #left-about #my-data #right-section ul li::Before {
+              content: ":";
+              margin-right: 40px; }
+      main #about-content #content #right-about {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(10, 150px);
+        width: 50%;
+        height: 25em; }
+        main #about-content #content #right-about .technology {
+          margin: 0 10px 10px 10px; }
+          main #about-content #content #right-about .technology .photo {
+            padding: 20px 50px;
+            border: 1px solid #262624; }
+          main #about-content #content #right-about .technology .photo img {
+            width: 60px;
+            height: 60px; }
+          main #about-content #content #right-about .technology .name-technology {
+            text-align: center; }
+            main #about-content #content #right-about .technology .name-technology p {
+              text-transform: capitalize; }
+            main #about-content #content #right-about .technology .name-technology #caps {
+              text-transform: uppercase; }
+  main #my_skills {
+    width: 100%;
+    height: 1000px;
+    background-color: red; }
+    main #my_skills #content-skills {
+      width: 70%;
+      margin: 0 auto; }
+      main #my_skills #content-skills .name {
+        text-align: center; }
+        main #my_skills #content-skills .name .section-name {
+          text-transform: capitalize; }
+        main #my_skills #content-skills .name .hr {
+          border-top: 1px solid #262624;
+          width: 150px;
+          margin: 50px auto; }
+
+/*# sourceMappingURL=aboutMe.css.map */
