@@ -38,51 +38,57 @@
   </style>
 </head>
 <body>
+<div class="alert alert-warning" role="alert">
+  <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+    <span aria-hidden="true">&times;</span>
+  </button>
+  Доброго дня. На даний момент сайт-резюме в режимі "Beta". Дякую за Ваше розуміння.
+</div>
 <div id="wrapepr">
   <!-- Start header -->
   <div id="background">
     <header>
 
-      <div id="nav-link">
-        <div id="left">
-          <div id="name-project">
-            <ul>
-              <li><a href="#"><h1><span class="bold" id="bio">Bio</span> card</h1></a></li>
-            </ul>
-          </div>
-          <div id="about-me">
-            <h1>
-              Привіт! <br/>
-              Я Full Stack Програміст <br/>
-              <br/>
-              <span class="bold">
+      <div id="left">
+        <div id="name-project">
+          <ul>
+            <li><a href="#"><h1><span class="bold" id="bio">Bio</span> card</h1></a></li>
+          </ul>
+        </div>
+        <div id="about-me">
+          <h1>
+            Привіт! <br/>
+            Я програміст <br/>
+            <br/>
+            <span class="bold">
               Мене звати<br/>
               <span id="name">Гулій Михайло</span>
             </span>
-            </h1>
-            <br/>
-            <div id="buttons">
-              <button id="contact-me">Contact me</button>
-              <button id="download-CV"><a href="Resume/Resume.pdf" download="Resume/Resume.pdf">Download my C.V</a>
-              </button>
-            </div>
-          </div>
-        </div>
-        <div id="right">
-          <div id="navigator" class="default">
-            <ul>
-              <li><a href="#">Додому</a></li>
-              <li><a href=#about_me>Про мене</a></li>
-              <li><a href="#my_skills">Мої навички</a></li>
-              <li><a href="">Моє портфоліо</a></li>
-              <li><a href="#my_contacts">Зв'язок зі мною</a></li>
-            </ul>
-          </div>
-          <div id="photo">
-            <img src="img/MyPhoto.jpg" alt="My photo">
+          </h1>
+          <br/>
+          <div id="buttons">
+            <button id="contact-me"><a href="#my_contacts">Contact me</a></button>
+            <button id="download-CV"><a href="Resume/Resume.pdf" download="Resume/Resume.pdf">Download my C.V</a>
+            </button>
           </div>
         </div>
       </div>
+
+      <div id="right">
+        <div id="navigator" class="default">
+          <ul>
+            <li><a href="#">Додому</a></li>
+            <li><a href=#about_me>Про мене</a></li>
+            <li><a href="#my_skills">Мої навички</a></li>
+            <li><a href="">Моє портфоліо</a></li>
+            <li><a href="#my_contacts">Зв'язок зі мною</a></li>
+          </ul>
+        </div>
+        <div id="photo">
+          <img src="img/MyPhoto.jpg" alt="My photo">
+        </div>
+      </div>
+
     </header>
   </div>
   <!-- End header -->
@@ -185,6 +191,7 @@
               <p>Sass</p>
             </div>
           </div>
+
         </div>
       </div>
     </div>
@@ -288,7 +295,7 @@
             <input id="name-input" type="text" placeholder="Your name">
             <input id="email-input" type="email" placeholder="Your Email">
             <input id="subject-input" type="text" placeholder="Subject">
-<!--            <input id="message-input" type="text" placeholder="Your Message">-->
+            <!--            <input id="message-input" type="text" placeholder="Your Message">-->
             <Textarea id="message-input" placeholder="Your Message"></Textarea>
             <button type="submit">Submit</button>
           </form>
@@ -300,7 +307,8 @@
         <ul>
           <li id="gmail"><a href="mailto:miha080104@gmail.com"><img src="img/gmail.png" alt="Gmail"></a></li>
           <li id="github"><a href="https://github.com/Miha0809"><img src="img/github.png" alt="Github"></a></li>
-          <li id="linkedin"><a href="https://www.linkedin.com/in/guliy-mikhail-280a981a5/"><img src="img/linkedin.png" alt="Libkedin"></a></li>
+          <li id="linkedin"><a href="https://www.linkedin.com/in/guliy-mikhail-280a981a5/"><img src="img/linkedin.png"
+                                                                                                alt="Libkedin"></a></li>
         </ul>
       </div>
     </div>
@@ -319,6 +327,6 @@
 <!-- End Bootstrap -->
 
 <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
-<script src="js/ScrollMenu.js"></script>
+<script src="js/main.js"></script>
 </body>
 </html>

@@ -44,13 +44,14 @@ main {
 
     #content {
       display: grid;
-      grid-template-columns: repeat(2, 70%);
+      grid-template-columns: repeat(2, 65%);
       grid-template-rows: repeat(4, 8em);
 
       #left-about {
+
         p {
+          width: 90%;
           display: flex;
-          width: 70%;
           font-size: 15px;
           line-height: 30px;
         }
@@ -89,9 +90,9 @@ main {
 
       #right-about {
         display: grid;
-        grid-template-columns: repeat(2, 50%);
+        grid-template-columns: repeat(3, 33.3%);
         grid-template-rows: repeat(1, 150px);
-        width: 50%;
+        width: 55%;
 
         .technology {
           margin: 0 10px 10px 10px;
@@ -196,4 +197,5 @@ main {
     }
   }
 }
+
 /******************** End main ********************/

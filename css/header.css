@@ -6,85 +6,82 @@
   #background header {
     margin: 0 auto;
     padding-top: 10px;
-    width: 70%; }
-    #background header #nav-link {
-      display: flex; }
-      #background header #nav-link #left {
-        width: 40%; }
-        #background header #nav-link #left #name-project {
-          text-transform: capitalize; }
-          #background header #nav-link #left #name-project #bio {
-            font-size: 55px; }
-          #background header #nav-link #left #name-project ul li a {
-            color: #262624; }
-          #background header #nav-link #left #name-project ul li a:hover {
-            text-decoration: none;
-            color: #262624;
-            font-weight: 1000; }
-        #background header #nav-link #left #about-me {
-          margin-top: 100px; }
-          #background header #nav-link #left #about-me h1 {
-            font-weight: 500; }
-            #background header #nav-link #left #about-me h1 #name {
-              text-transform: capitalize; }
-          #background header #nav-link #left #about-me #buttons {
-            display: flex; }
-            #background header #nav-link #left #about-me #buttons #contact-me {
-              margin-right: 50px; }
-            #background header #nav-link #left #about-me #buttons button:not(:hover) {
-              text-transform: capitalize;
-              background-color: #bebeb6;
-              color: #494947;
-              border: 1px solid transparent;
-              padding: 10px 50px;
-              transition: 0.2s; }
-              #background header #nav-link #left #about-me #buttons button:not(:hover) a {
-                color: #494947; }
-            #background header #nav-link #left #about-me #buttons button:hover {
-              text-transform: capitalize;
-              background-color: #494947;
-              color: #bebeb6;
-              border: 1px solid transparent;
+    width: 70%;
+    display: grid;
+    grid-template-columns: repeat(2, 2fr);
+    grid-template-rows: repeat(2, 0.2fr); }
+    #background header #left {
+      text-transform: capitalize; }
+      #background header #left #bio {
+        font-size: 55px; }
+      #background header #left ul li a {
+        color: #262624; }
+      #background header #left ul li a:hover {
+        text-decoration: none;
+        color: #262624;
+        font-weight: 1000; }
+      #background header #left #about-me {
+        margin-top: 100px; }
+        #background header #left #about-me h1 {
+          font-weight: 500; }
+          #background header #left #about-me h1 #name {
+            text-transform: capitalize; }
+        #background header #left #about-me #buttons {
+          display: flex; }
+          #background header #left #about-me #buttons #contact-me {
+            margin-right: 50px; }
+          #background header #left #about-me #buttons button:not(:hover) {
+            text-transform: capitalize;
+            background-color: #bebeb6;
+            color: #494947;
+            border: 1px solid transparent;
+            padding: 10px 50px;
+            transition: 0.2s; }
+            #background header #left #about-me #buttons button:not(:hover) a {
+              color: #494947; }
+          #background header #left #about-me #buttons button:hover {
+            text-transform: capitalize;
+            background-color: #494947;
+            color: #bebeb6;
+            border: 1px solid transparent;
+            transition: 0.2s;
+            padding: 10px 50px; }
+            #background header #left #about-me #buttons button:hover a {
               transition: 0.2s;
-              padding: 10px 50px; }
-              #background header #nav-link #left #about-me #buttons button:hover a {
-                transition: 0.2s;
-                text-decoration: none;
-                color: #bebeb6; }
-      #background header #nav-link #right {
-        width: 60%; }
-        #background header #nav-link #right #navigator ul {
-          display: flex;
-          float: right; }
-          #background header #nav-link #right #navigator ul li {
-            margin: 15px; }
-            #background header #nav-link #right #navigator ul li a:not(:hover) {
-              color: #4a4a4a;
-              transition: 0.5s; }
-            #background header #nav-link #right #navigator ul li a:hover {
-              color: #262624;
               text-decoration: none;
-              border-left: 1px solid #262624;
-              border-right: 1px solid #262624;
-              padding: 5px;
-              transition: 0.5s; }
-        #background header #nav-link #right #navigator.default {
-          width: 100%; }
-        #background header #nav-link #right #navigator.fixed {
-          position: fixed;
-          top: 0;
-          left: 0;
-          width: 100%;
-          background-color: rgba(237, 241, 244, 0.95);
-          box-shadow: 5px 1px 10px #333;
-          display: flex;
-          justify-content: center; }
-        #background header #nav-link #right #photo {
-          position: relative;
-          display: flex;
-          float: right;
-          right: 100px;
-          height: 600px;
-          width: 500px; }
+              color: #bebeb6; }
+    #background header #right #navigator ul {
+      display: flex;
+      float: right; }
+      #background header #right #navigator ul li {
+        margin: 15px; }
+        #background header #right #navigator ul li a:not(:hover) {
+          color: #4a4a4a;
+          transition: 0.5s; }
+        #background header #right #navigator ul li a:hover {
+          color: #262624;
+          text-decoration: none;
+          border-left: 1px solid #262624;
+          border-right: 1px solid #262624;
+          padding: 5px;
+          transition: 0.5s; }
+    #background header #right #navigator.default {
+      width: 100%; }
+    #background header #right #navigator.fixed {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      background-color: rgba(237, 241, 244, 0.95);
+      box-shadow: 5px 1px 10px #333;
+      display: flex;
+      justify-content: center; }
+    #background header #right #photo {
+      float: right; }
+      #background header #right #photo img {
+        height: 600px;
+        width: 600px;
+        background-size: cover;
+        background-repeat: no-repeat; }
 
 /*# sourceMappingURL=header.css.map */

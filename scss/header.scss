@@ -21,133 +21,272 @@ $lightBlue: #edf1f4;
     margin: 0 auto;
     padding-top: 10px;
     width: 70%;
+    display: grid;
+    grid-template-columns: repeat(2, 2fr);
+    grid-template-rows: repeat(2, 0.2fr);
 
-    #nav-link {
-      display: flex;
+    #left {
+      text-transform: capitalize;
 
-      #left {
-        width: 40%;
+      #bio {
+        font-size: 55px;
+      }
 
-        #name-project {
-          text-transform: capitalize;
+      ul li a {
+        color: $black;
+      }
 
-          #bio {
-            font-size: 55px;
-          }
+      ul li a:hover {
+        text-decoration: none;
+        color: $black;
+        font-weight: map-get($font-weight, bold);
+      }
 
-          ul li a {
-            color: $black;
-          }
+      #about-me {
+        margin-top: 100px;
 
-          ul li a:hover {
-            text-decoration: none;
-            color: $black;
-            font-weight: map-get($font-weight, bold);
+        h1 {
+          font-weight: map-get($font-weight, normal);
+
+          #name {
+            text-transform: capitalize;
           }
         }
 
-        #about-me {
-          margin-top: 100px;
+        #buttons {
+          display: flex;
 
-          h1 {
-            font-weight: map-get($font-weight, normal);
+          #contact-me {
+            margin-right: 50px;
+          }
 
-            #name {
-              text-transform: capitalize;
+          button:not(:hover) {
+            text-transform: capitalize;
+            background-color: $lightBrown;
+            color: $darkBrown;
+            border: 1px solid transparent;
+            padding: 10px 50px;
+            transition: 0.2s;
+
+            a {
+              color: $darkBrown;
             }
           }
 
-          #buttons {
-            display: flex;
+          button:hover {
+            text-transform: capitalize;
+            background-color: $darkBrown;
+            color: $lightBrown;
+            border: 1px solid transparent;
+            transition: 0.2s;
+            padding: 10px 50px;
 
-            #contact-me {
-              margin-right: 50px;
-            }
-
-            button:not(:hover) {
-              text-transform: capitalize;
-              background-color: $lightBrown;
-              color: $darkBrown;
-              border: 1px solid transparent;
-              padding: 10px 50px;
+            a {
               transition: 0.2s;
-
-              a {
-                color: $darkBrown;
-              }
-            }
-
-            button:hover {
-              text-transform: capitalize;
-              background-color: $darkBrown;
+              text-decoration: none;
               color: $lightBrown;
-              border: 1px solid transparent;
-              transition: 0.2s;
-              padding: 10px 50px;
-
-              a {
-                transition: 0.2s;
-                text-decoration: none;
-                color: $lightBrown;
-              }
             }
           }
         }
       }
+    }
 
-      #right {
-        width: 60%;
+    #right {
+      #navigator {
+        ul {
+          display: flex;
+          float: right;
 
-        #navigator {
-          ul {
-            display: flex;
-            float: right;
+          li {
+            margin: 15px;
 
-            li {
-              margin: 15px;
-
-              a:not(:hover) {
-                color: $gray;
-                transition: 0.5s;
-              }
-
-              a:hover {
-                color: $black;
-                text-decoration: none;
-                border-left: 1px solid $black;
-                border-right: 1px solid $black;
-                padding: 5px;
-                transition: 0.5s;
-
-              }
+            a:not(:hover) {
+              color: $gray;
+              transition: 0.5s;
             }
-          }
 
-          &.default {
-            width: 100%;
-          }
+            a:hover {
+              color: $black;
+              text-decoration: none;
+              border-left: 1px solid $black;
+              border-right: 1px solid $black;
+              padding: 5px;
+              transition: 0.5s;
 
-          &.fixed {
-            position: fixed;
-            top: 0;
-            left: 0;
-            width: 100%;
-            background-color: rgba($lightBlue, 0.95);
-            box-shadow: 5px 1px 10px #333;
-            display: flex;
-            justify-content: center;
+            }
           }
         }
 
-        #photo {
-          position: relative;
+        &.default {
+          width: 100%;
+        }
+
+        &.fixed {
+          position: fixed;
+          top: 0;
+          left: 0;
+          width: 100%;
+          background-color: rgba($lightBlue, 0.95);
+          box-shadow: 5px 1px 10px #333;
           display: flex;
-          float: right;
-          right: 100px;
+          justify-content: center;
+        }
+      }
+
+
+      #photo {
+        float: right;
+
+        img {
           height: 600px;
-          width: 500px;
+          width: 600px;
+          background-size: cover;
+          background-repeat: no-repeat;
         }
       }
     }
   }
 }
+
+//@media screen and (max-width: 1250px){
+//
+//}
+
+//#background {
+//  background-color: $lightBlue;
+//
+//  header {
+//    margin: 0 auto;
+//    padding-top: 10px;
+//    width: 70%;
+//
+//    #nav-link {
+//      display: flex;
+//
+//      #left {
+//        width: 40%;
+//
+//        #name-project {
+//          text-transform: capitalize;
+//
+//          #bio {
+//            font-size: 55px;
+//
+//          }
+//
+//          ul li a {
+//            color: $black;
+//          }
+//
+//          ul li a:hover {
+//            text-decoration: none;
+//            color: $black;
+//            font-weight: map-get($font-weight, bold);
+//          }
+//        }
+//
+//        #about-me {
+//          margin-top: 100px;
+//
+//          h1 {
+//            font-weight: map-get($font-weight, normal);
+//
+//            #name {
+//              text-transform: capitalize;
+//            }
+//          }
+//
+//          #buttons {
+//            display: flex;
+//
+//            #contact-me {
+//              margin-right: 50px;
+//            }
+//
+//            button:not(:hover) {
+//              text-transform: capitalize;
+//              background-color: $lightBrown;
+//              color: $darkBrown;
+//              border: 1px solid transparent;
+//              padding: 10px 50px;
+//              transition: 0.2s;
+//
+//              a {
+//                color: $darkBrown;
+//              }
+//            }
+//
+//            button:hover {
+//              text-transform: capitalize;
+//              background-color: $darkBrown;
+//              color: $lightBrown;
+//              border: 1px solid transparent;
+//              transition: 0.2s;
+//              padding: 10px 50px;
+//
+//              a {
+//                transition: 0.2s;
+//                text-decoration: none;
+//                color: $lightBrown;
+//              }
+//            }
+//          }
+//        }
+//      }
+//
+//      #right {
+//        width: 60%;
+//
+//        #navigator {
+//          ul {
+//            display: flex;
+//            float: right;
+//
+//            li {
+//              margin: 15px;
+//
+//              a:not(:hover) {
+//                color: $gray;
+//                transition: 0.5s;
+//              }
+//
+//              a:hover {
+//                color: $black;
+//                text-decoration: none;
+//                border-left: 1px solid $black;
+//                border-right: 1px solid $black;
+//                padding: 5px;
+//                transition: 0.5s;
+//
+//              }
+//            }
+//          }
+//
+//          &.default {
+//            width: 100%;
+//          }
+//
+//          &.fixed {
+//            position: fixed;
+//            top: 0;
+//            left: 0;
+//            width: 100%;
+//            background-color: rgba($lightBlue, 0.95);
+//            box-shadow: 5px 1px 10px #333;
+//            display: flex;
+//            justify-content: center;
+//          }
+//        }
+//
+//        #photo {
+//          position: relative;
+//          display: flex;
+//          float: right;
+//          right: 100px;
+//          height: 600px;
+//          width: 500px;
+//        }
+//      }
+//    }
+//  }
+//}
