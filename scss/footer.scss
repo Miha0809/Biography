@@ -26,7 +26,7 @@ footer {
 
   .background {
     background-color: rgba($black, 0.5);
-    height: 1024px;
+    // height: 1024px;
 
     #my_contacts {
       margin: 100px auto;
@@ -114,22 +114,14 @@ footer {
         }
       }
     }
-  }
-
-  #bottom {
-    width: 100%;
-    background-color: $darkBrown;
 
     #footer-content {
-      width: 70%;
       display: flex;
-      justify-content: right;
-
+      margin-left: 45.5%;
       ul {
         display: flex;
-        float: left;
         margin-top: 5px;
-                                                
+        
         li {
           width: 40px;
           height: 40px;
@@ -139,7 +131,7 @@ footer {
         }
 
         li:not(:hover) {
-          background-color: $darkBrown;
+          background-color: transparent;
           transition: 0.3s;
         }
 

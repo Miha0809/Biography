@@ -4,8 +4,7 @@ footer {
   background-image: url(../img/Oslo.jpg);
   background-size: cover; }
   footer .background {
-    background-color: rgba(38, 38, 36, 0.5);
-    height: 1024px; }
+    background-color: rgba(38, 38, 36, 0.5); }
     footer .background #my_contacts {
       margin: 100px auto;
       width: 70%; }
@@ -63,29 +62,24 @@ footer {
             font-size: 20px;
             background-color: rgba(255, 255, 255, 0.5);
             padding: 20px; }
-  footer #bottom {
-    width: 100%;
-    background-color: #494947; }
-    footer #bottom #footer-content {
-      width: 70%;
+    footer .background #footer-content {
       display: flex;
-      justify-content: right; }
-      footer #bottom #footer-content ul {
+      margin-left: 45.5%; }
+      footer .background #footer-content ul {
         display: flex;
-        float: left;
         margin-top: 5px; }
-        footer #bottom #footer-content ul li {
+        footer .background #footer-content ul li {
           width: 40px;
           height: 40px;
           border: 1px solid white;
           margin: 10px; }
-        footer #bottom #footer-content ul li:not(:hover) {
-          background-color: #494947;
+        footer .background #footer-content ul li:not(:hover) {
+          background-color: transparent;
           transition: 0.3s; }
-        footer #bottom #footer-content ul li:hover {
+        footer .background #footer-content ul li:hover {
           background-color: #bebeb6;
           transition: 0.3s; }
-        footer #bottom #footer-content ul img {
+        footer .background #footer-content ul img {
           width: 30px;
           height: 30px;
           position: relative;
